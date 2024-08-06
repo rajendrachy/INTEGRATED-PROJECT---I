@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar{
+    width:100%;
+    display:flex;
+    position: sticky;
+ top: 0;
+ 
+    height:60px;
+    padding-bottom: 10px;
+    z-index: 3;
+    background-color:rgb(28,40,51);
+    backdrop-filter: blur(5px);
+}
+
+.navcontent{
+    font-size: 18px;
+    display: flex;
+    justify-content: end;
+    width: 90%;
+    padding-top: 10px;
+    z-index: 3;
+}
+
+.navcontent a{
+   text-decoration: none;
+    padding: 20px;
+    color:rgb(238, 237, 237);
+    opacity: 1;
+ font-weight:medium;
+ font-size:large;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    /* background-color: #ddd; */
+    color:#ffdd40
+
+
+}
+.navbar img {
+    height: 70px; /* Set the height of the logo */
+     /* margin-right: 500px; */
+    
+}
+
+
+.container-1 {
+    background-color: #1c2533f2;
+}
+
+.div-1 {
+    height: 200px;
+    width: 100%;
+}
+
+.div-1 h1 {
+    color: #fff;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 50px;
+}
+
+/* .....................form css ....................*/
+
+.form-container {
+    margin-left: 40%; 
+    height: 1200px;
+}
+
+form {
+    background-color: #1c2833;
+    padding: 10px; 
+   
+}
+
+/* .name-container {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.name-container input {
+    width: 48%; 
+    margin-right: 4%; 
+} */
+
+
+
+
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: white;
+}
+
+input, textarea {
+    width: 50%;
+    padding: 3px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0);;
+    border: none;
+    outline: none; /*default outline ramove */
+    width: 30%;
+    cursor: text;
+    color: white;
+}
+
+
+input:focus, textarea:focus {
+    border-bottom: 2px solid rgba(255, 221, 0, 0.733);
+}
+input, textarea {
+    border-bottom: 2px solid rgba(128, 128, 128, 0.297);
+}
+#firstName {
+    width: 300px;
+}
+#lastName {
+    width: 300px;
+}
+button {
+    background-color: rgba(255, 149, 0, 0.903);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+#bottom {
+    padding: 8px 30px 8px 30px;
+    border-radius: 40px;
+    margin-bottom: 80px;
+}
+
+.message {
+    margin-left: 390px;
+    padding: 20px;
+}
+.name {
+    margin-left: 400px;
+    padding: 8px;
+}
+
+#name {
+    margin-top: 80px;
+}
+
+
+
+/* ...............footer desigh ..................*/
+
+
+.footer-col ul li a{
+    color: rgba(255, 166, 0, 0.555);
+    text-decoration: none;
+    padding: 5px;
+}
+.footer-col ul li {
+    line-height: 40px;
+}
+h4 {
+    color: wheat;
+}
+.social-link a{
+    color: white;
+    background-color: rgba(255, 166, 0, 0.555);
+    padding: 5px;
+    
+
+}
+.footer-col h4 {
+    padding: 6px;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+.footer-col a i {
+    padding: 5px;
+}
+
+.container-5 {
+    max-width: 1170px;
+    margin: auto;
+    
+}
+ul {
+    list-style: none;
+}
+.connect {
+    color: white;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-p {
+color: whitesmoke;
+text-align: center;
+margin-top: 100px;
+}
+footer {
+    height: 600px;
+    background-color: #1c2833;
+    padding-top: 100px;
+}
+h2 {
+    color: rgba(255, 111, 0, 0.597);
+    margin-left: 90px;
+    margin-top: 20px;
+}
+hr {
+    width: 200px;
+    margin-left: 60px;
+    
+}
+
+
+@media only screen and (max-width: 768px) {
+    .footer-col{
+        /* flex-basis: 1000px; */
+        align-items: center;
+        margin-left: 180px;
+    }
+    .footer {
+        height: auto;
+    }
+    .social-link a i{
+        margin-top: 4px;
+        
+    }
+}
+
+
+/* Add this at the end of your existing CSS */
+
+@media only screen and (max-width: 768px) {
+
+    form {
+        padding: 60px;
+    }
+
+    label, input, textarea {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #message {
+        margin-left: 20px;
+    }
+
+    button {
+        margin-bottom: 20px;
+    }
+
+    .message {
+        margin-left: 0px;
+    }
+
+    .name {
+        margin-left: 0;
+    }
+}

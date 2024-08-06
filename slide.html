@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slideshow with Separate Boxes</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="sidebar.css">
+  <style>
+    .carousel-item img {
+      height: 400px;
+      width: 100%;
+    }
+    .box {
+      background-color: #fff;
+      padding: 20px;
+      border: 1px solid #fff;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <div id="slideshow" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="box">
+                <img src="cover5.png" class="d-block w-100" alt="Slide 1">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="box">
+                <img src="WhatsApp Image 2024-03-21 at 22.30.05_2a46bac8.jpg" class="d-block w-100" alt="Slide 1">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="box">
+                <img src="WhatsApp Image 2024-03-21 at 22.30.05_2a46bac8.jpg" class="d-block w-100" alt="Slide 2">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="box">
+                <img src="WhatsApp Image 2024-03-21 at 22.51.12_1391f22c.jpg" class="d-block w-100" alt="Slide 2">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add more carousel items with two separate boxes and images as needed -->
+      </div>
+      <a class="carousel-control-prev" href="#slideshow" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#slideshow" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    $('.carousel').carousel({
+      interval: 4000 // Change slide every 4 seconds
+    });
+  </script>
+</body>
+</html>
