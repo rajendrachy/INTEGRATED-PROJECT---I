@@ -1,0 +1,792 @@
+
+/* navbar */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    background-color: #1c2833;
+    display: flex;
+    justify-content: flex-end;  
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    padding: 20px 40px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    
+}
+
+ul li ul.dropdown li {
+    display: block;
+    
+
+}
+
+ul li ul.dropdown {
+    width: 260px;
+    background-color: darkgoldenrod;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    padding: 20px;
+}
+
+ul li a:hover {
+    background-color: #1c2833;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1c2833;
+    position: relative;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    display: flex;
+    position: sticky;
+    top: 0;
+    height: 80px;
+    z-index: 3;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+}
+
+.navcontent {
+    font-size: 18px;
+    display: flex;
+    justify-content: end;
+    width: 90%;
+    padding-top: 10px;
+    z-index: 3;
+}
+
+.navcontent a {
+    text-decoration: none;
+    padding: 20px;
+    color: rgb(238, 237, 237);
+    font-weight: medium;
+    font-size: large;
+}
+
+.navbar a:hover {
+    color: #ffdd40;
+}
+
+.navbar img {
+    height: 70px; /* Set the height of the logo */
+}
+
+@media screen and (max-width: 560px) {
+    .navbar, .navcontent {
+        display: block;
+    }
+
+    .navcontent a {
+        padding-bottom: 50px;
+        padding-left: 5px;
+    }
+}
+
+/* Header Section */
+
+.cover-photo {
+    position: relative;
+    height: 730px; /* adjust height as needed */
+    background-image: url('amrita_3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.073);
+    width: 100%;
+}
+
+
+.cover-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    letter-spacing: 3px;
+}
+
+.cover-content h1 {
+    font-size: 54px;
+    margin-top: 35px;
+    font-weight: bold;
+    letter-spacing: 15px;
+}
+
+.cover-content a {
+    text-decoration: none;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: goldenrod;
+    padding: 15px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 60px;
+    font-weight: bold;
+}
+
+.cover-content p {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 50px;
+}
+
+.cover-content span {
+    color: goldenrod;
+    font-size: 54px;
+}
+
+/* Divs 1-10 */
+.div-10 {
+    background-color: #1c28332e;
+    height: 160px;
+}
+
+h3 {
+    border: 1px solid rgba(255, 255, 255, 0.71);
+    border-radius: 10%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.715);
+    margin-top: 90px;
+    padding: 16px;
+    position: relative;
+    display: inline-block;
+    margin-left: 40%;
+    transition: color 0.3s;
+}
+
+.div-10 h3:hover {
+    color: darkgoldenrod;
+}
+
+@media screen and (max-width: 576px) {
+    h3 {
+        font-size: 16px;
+        padding: 6px 12px;
+        margin-left: 0;
+    }
+}
+
+.div-20 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.div-20 a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.804);
+    display: inline-block;
+    padding: 100px;
+    position: relative;
+}
+
+.div-20 a::after {
+    content: '';
+    position: absolute;
+    margin-top: 35px;
+    left: 47%;
+    transform: translateX(-60%);
+    border: 2px solid transparent;
+    transition: background-color 0.3s, border-color 0.3s;
+    width: 12px;
+    height: 10px;
+    background-color: white;
+    z-index: -1;
+}
+
+.div-20 a:hover::after {
+    background-color: darkgoldenrod;
+    border-color: rgba(184, 135, 11, 0.781);
+}
+
+h3:hover, .div-20 a:hover {
+    color: darkgoldenrod;
+}
+
+/* Image Section */
+.container {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    margin-left: 120px;
+    margin-top: 140px;
+}
+
+.image {
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    background-size: cover;
+}
+
+.image1 {
+    background-image: url('amritamanage1.jpg');
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.image2 {
+    background-image: url('amritamanage2.jpg');
+    top: 50px;
+    left: 50px;
+    z-index: 2;
+}
+
+.image3 {
+    background-image: url('amritamanage3.jpg');
+    top: 100px;
+    left: 100px;
+    z-index: 1;
+}
+
+.image4 {
+    background-image: url('amritaresearch1.jpg');
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.image5 {
+    background-image: url('amritaresearch2.jpg');
+    top: 50px;
+    left: 50px;
+    z-index: 2;
+}
+
+.image6 {
+    background-image: url('amritaresearch3.jpg');
+    top: 100px;
+    left: 100px;
+    z-index: 1;
+}
+
+.image7 {
+    background-image: url('amritaeducation1.jpg');
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.image8 {
+    background-image: url('amritaeducation2.jpg');
+    top: 50px;
+    left: 50px;
+    z-index: 2;
+}
+
+.image9 {
+    background-image: url('amritaeducation3.webp');
+    top: 100px;
+    left: 100px;
+    z-index: 1;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 750px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.content h2 {
+    margin-top: 300px;
+    color: white;
+    margin: 100px 500px 0px 0px;
+}
+
+.content p {
+    margin-right: 200px;
+    color: white;
+}
+
+/* Additional styles for the hidden content */
+.hidden-content {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    margin-top: 400px;
+    margin-left: 100px;
+}
+
+.line {
+    border: 2px solid white;
+    color: red;
+    border-radius: 100%;
+    background-color: red;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Video Section */
+.section.video {
+    background-image: url('video-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #172238;
+    padding: 120px 0px;
+}
+
+.section.video .container {
+    display: flex;
+    justify-content: space-evenly;
+    height: 500px;
+}
+
+.section.video .left-content {
+    color: #fff;
+    width: calc(34% - 50px);
+}
+
+.section.video .left-content span {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: whitesmoke;
+}
+
+.section.video .left-content h4 {
+    margin-top: 20px;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.section.video .left-content h4 em {
+    font-style: normal;
+    color: #f5a425;
+}
+
+.section.video .left-content .main-button {
+    margin-top: 30px;
+    background-color: goldenrod;
+    width: 130px;
+    padding: 9px;
+}
+
+.section.video .left-content .main-button a {
+    text-decoration: none;
+}
+
+.left-content p a {
+    text-decoration: none;
+    color: red;
+    word-spacing: 5px;
+}
+
+.video-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.video-wrapper, .left-content {
+    margin-left: 60px;
+}
+
+.video-item {
+    width: calc(60% - 50px);
+    margin-left: 100px; /* adjust as needed */
+    position: relative;
+    height: 435px;
+    margin-left: 80px;
+}
+.video-item  img {
+    height: 360px;
+}
+
+
+.video-item figure {
+    position: relative;
+    width: 100%;
+    font-size: 0;
+}
+
+.video-item figure img {
+    width: 100%;
+}
+
+.video-item .video-caption {
+    position: absolute;
+    z-index: 10;
+    background-color: rgba(250, 250, 250, 0.75);
+    height: 80px;
+    width: 100%;
+    padding: 27px 30px;
+    bottom: 0;
+}
+
+.video-item .video-caption h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+
+/* Play Button */
+.play-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    cursor: pointer;
+    margin-left: 280px;
+    top: 10px;
+    background-color: goldenrod;
+}
+
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 30px solid whitesmoke;
+}
+
+/* Contact Section */
+
+
+/* let keep in touch */
+
+ /* Global styles */
+
+
+ .container2 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Contact section styles */
+.sec.contact {
+    background-image: url('back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #172238;
+    padding-bottom: 120px;
+}
+
+.sec.contact .sec-heading h2 {
+    color: #ffffffb5;
+    text-align: center;
+    border: 1px solid rgba(250, 250, 250, 0.37);
+    width: 50%;
+    padding: 14px;
+    margin-top: 10px;
+    margin-left: 500px;
+    border-radius: 20%;
+}
+.sec.contact .sec-heading h2:hover {
+    color: goldenrod;
+}
+
+
+
+.cont-cont {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cont-form {
+    background-color: rgba(250, 250, 250, 0.1);
+    padding: 30px;
+    margin-left: 60px;
+    margin-top: 90px;
+}
+
+
+.form-grp {
+    margin-bottom: 18px;
+   
+}
+
+.form-ctrl {
+    width: calc(100% - 20px);
+    height: 40px;
+    background-color: rgba(250, 250, 250, 0.1);
+    border-radius: 0px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 13px;
+    padding: 10px;
+
+}
+
+.form-grp textarea {
+    height: 155px;
+}
+
+.form-ctrl:focus {
+    background-color: rgba(250, 250, 250, 0.1);
+}
+
+.form-ctrl::placeholder {
+    color: #fff;
+}
+
+.btn {
+    background-color: #f5a425;
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    padding: 12px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#map {
+    width: 85%;
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-top: 160px;
+}
+
+
+
+/* Responsive page in all device */
+
+
+/* amrita */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+}
+a:link,a:active,a:visited,a:hover{
+	color:#3f51b5;
+}
+
+.outerdiv
+{
+	width: 100%;
+    min-height: 100vh;
+    background: #1c2833;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.innerdiv
+{
+	transform: scale(0.9);
+	margin: 1rem;
+	display: grid;
+	grid-gap: 1.5rem;
+	grid-template-rows: repeat(2,22rem);
+	grid-template-columns: repeat(4,17rem);
+}
+.eachdiv
+{
+	padding: 1rem 2rem;
+    border-radius: 0.8rem;
+    box-shadow: 5px 5px 20px #6d6b6b6b;
+    color: #1c2833;
+}
+.div1
+{
+	background: #733FC8;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-position-x: 25rem;
+}
+.div2
+{
+	background:#49556B;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.div3
+{
+	background: white;
+    grid-column: 4/5;
+    grid-row: 1/3;
+    color: black;
+}
+.div4
+{
+	background: white;
+	grid-column: 1/2;
+    grid-row: 2/3;
+    color: black;
+}
+.div5
+{
+	background: #18202D;
+	grid-column: 2/4;
+    grid-row: 2/3;
+}
+.userdetails
+{
+	display: flex;
+}
+.imgbox
+{
+	margin-right: 1rem;
+}
+.imgbox img
+{
+	border-radius: 50%;
+	width: 2rem;
+	border: 2px solid #cec5c5;
+}
+.detbox
+{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.detbox p
+{
+	margin: 0;
+}
+.detbox .name
+{
+	color: hsl(0, 0%, 81%);
+    font-size: 0.9rem;
+    margin-bottom: 0.1rem;
+    font-weight: 600;
+}
+.detbox .name.dark
+{
+	color: #49505A;
+}
+.detbox .designation
+{
+	color: hsl(0, 0%, 81%);
+    opacity: 50%;
+    font-size: 0.8rem;
+}
+.detbox .designation.dark
+{
+	color: #49505A;
+}
+.review h4
+{
+	font-size: 1.4rem;
+	color: #F3DEFF;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 0.8rem;
+}
+.review.dark h4{
+	color:#4B5258;
+}
+.review p
+{
+	font-size: 0.95rem;
+    color: #F3DEFF;
+    font-weight: 500;
+    opacity: 50%;
+    line-height: 1.5;
+}
+.review.dark p{
+	color: #0e0e0e;
+}
+.attribution
+{
+	font-size: 1rem;
+    line-height: 1.5;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    text-align: right;
+}
+.attribution a
+{
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 1000px)
+{
+	.innerdiv
+	{
+		transform: scale(0.7);
+	}
+}
+@media only screen and (max-width: 800px)
+{
+	.innerdiv
+	{
+		transform: scale(0.6);
+	}
+}
+@media only screen and (max-width: 600px)
+{
+	.div1 {
+		background-position-x: 10rem;
+	}
+	.innerdiv
+	{
+		display: flex; 
+		flex-direction: column;
+		transform: scale(1);
+		margin: 2rem;
+		margin-bottom: 5rem;
+	}
+	.attribution
+	{
+		position: relative;
+	}
+}
